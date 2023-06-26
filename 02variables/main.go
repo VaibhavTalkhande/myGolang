@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-const LoginToken string = "asdasdasdasdasdasdasdasdasd"
+const LoginToken string = "asdasdasdasdasdasdasdasdasd"//public
 
 func main() {
 	var username string = "vaibhav"
@@ -25,4 +25,7 @@ func main() {
 	// no var style
 	numberOfUsers := 300000.00
 	fmt.Println("Number of users: ", numberOfUsers)
+	fmt.Println("Login Token: ", LoginToken)
+	//%T is used to print the type of the variable
+	fmt.Printf("Variable is of type: %T \n", numberOfUsers)
 }
