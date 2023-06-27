@@ -34,6 +34,12 @@ func main() {
 	fmt.Println(sort.IntsAreSorted(highScores))
 	sort.Ints(highScores)
 	fmt.Println("Contents of highScores after sorting: ", highScores)
+    //how to remove a item from slice based on index
 
+	var courses = []string{"reactjs", "javascript", "swift", "python", "ruby"}
+	fmt.Println("Courses: ", courses)
+	var index int = 2
+	courses = append(courses[:index], courses[index+1:]...)//... is used to append the slice
+	fmt.Println("Courses after removing: ", courses)
 
 }
